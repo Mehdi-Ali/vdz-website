@@ -1,189 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mehdi Ali - Portfolio</title>
-
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    <link rel="manifest" href="site.webmanifest">
-
+    <title>VanguarDz Studio</title>
+    <!-- Tailwind CSS CDN for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter for a clean, modern look -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
     <style>
+        /* Apply Inter font family to the entire body */
         body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-
-        header {
-            background-color: #333;
-            color: white;
-            padding: 1px;
-            font-size: 24px;
-        }
-
-        header p {
-            margin: 5px 0;
-        }
-
-
-        header p a {
-            font-size: 18px;
-        }
-
-
-        .container {
-            width: 80%;
-            margin: auto;
-            padding: 20px;
-        }
-
-        .summary {
-            background: white;
-            padding: 20px;
-            margin: 20px 0;
-            border-radius: 8px;
-            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-            text-align: left;
-        }
-
-        .summary h2 {
-            text-align: center;
-        }
-
-        .summary p {
-            text-align: justify;
-        }
-
-        .project {
-            background: white;
-            padding: 15px;
-            margin: 10px;
-            border-radius: 8px;
-            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-        }
-
-        .btn {
-            background-color: #008CBA;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 16px;
-            margin: 5px;
-            text-decoration: none;
-            display: inline-block;
-        }
-
-        .btn:hover {
-            background-color: #005f75;
-        }
-
-        .social-links {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            flex-wrap: wrap;
-            margin-top: 10px;
-            margin-bottom: 10px;
-        }
-
-        .social-links a {
-            text-decoration: none;
-            color: white;
-            font-weight: bold;
-        }
-
-        footer {
-            background-color: #333;
-            color: white;
-            padding: 10px;
-            margin-top: 20px;
+            font-family: 'Inter', sans-serif;
         }
     </style>
 </head>
-
-<body>
-
-    <header>
-        <h1>Mehdi Ali</h1>
-        <p>Game Developer | Unity | Gameplay & Systems Programming | Unreal Engine | XR | AI</p>
-        <p><a href="Resume/Mehdi Ali - Intermediate Game Developer Resume.pdf" style="color:white;">📄 Resume</a>
-            <a href="Resume/Mehdi Ali - GG Letter of Recommendation.pdf" style="color:white;">Recommendation</a>
-        </p>
-    </header>
-
-
-    <div class="container">
-
-        <div class="summary">
-            <h2>About Me</h2>
-            <p>Game Developer with a strong foundation in 3D and a background in science and mechanical engineering.
-                Passionate about
-                designing engaging gameplay and scalable systems, with robust problem-solving abilities, a lifelong
-                learning mindset,
-                and an adaptable team player. I find purpose in solving tough problems. I grow through challenges and
-                aim to make a real
-                difference. Experienced with Unity | C#, currently expanding expertise into Unreal Engine | C++.</p>
-            <p>Quote:
-                "Whatever is worth doing, it's worth doing well."</p>
+<body class="bg-gray-900 text-gray-200 min-h-screen flex flex-col">
+<!-- Navigation Bar: Provides easy access to all three pages -->
+<nav class="bg-gray-800 p-4 rounded-b-lg shadow-lg">
+    <div class="container mx-auto flex justify-between items-center flex-wrap">
+        <!-- Studio Logo and Name, linking to the studio page -->
+        <a href="index.html" class="flex items-center space-x-2 text-white text-2xl font-bold rounded-lg p-2 hover:bg-gray-700 transition duration-300">
+            <img src="./assets/_logo_square.png" alt="VanguarDz Logo" class="h-10 w-10 rounded-full object-cover">
+            <span>VanguarDz</span>
+        </a>
+        <!-- Navigation links -->
+        <div class="flex space-x-4 mt-2 md:mt-0">
+            <a href="index.html" class="text-gray-300 hover:text-purple-400 px-3 py-2 rounded-md text-lg font-medium transition duration-300">Studio</a>
+            <a href="./vdzchamps/index.html" class="text-gray-300 hover:text-purple-400 px-3 py-2 rounded-md text-lg font-medium transition duration-300">Game</a>
+            <a href="./privacy-policy/index.html" class="text-gray-300 hover:text-purple-400 px-3 py-2 rounded-md text-lg font-medium transition duration-300">Privacy Policy</a>
         </div>
-
-        <h2>Projects</h2>
-
-        <div class="project">
-            <h3>Anomaly (2025)</h3>
-            <img src="images/anomaly-thumbnail.jpg" alt="Anomaly Project Image" width="100%"
-                style="border-radius: 8px; margin-bottom: 10px;">
-            <p>Open World Multiplayer PvPvE VR Extraction Shooter</p>
-            <a href="Anomaly.html" class="btn">View Details</a>
-        </div>
-
-        <div class="project">
-            <h3>SWARM 2 (2024)</h3>
-            <img src="images/swarm-2-thumbnail.jpeg" alt="SWARM 2 Project Image" width="100%"
-                style="border-radius: 8px; margin-bottom: 10px;">
-            <p>VR roguelike arcade shooter</p>
-            <a href="Swarm2.html" class="btn">View Details</a>
-        </div>
-
-        <div class="project">
-            <h3>Sketchbox (2023)</h3>
-            <img src="images/sketchbox-thumbnail.jpg" alt="Sketchbox Project Image" width="100%"
-                style="border-radius: 8px; margin-bottom: 10px;">
-            <p>The leading, virtual reality training & assessment platform</p>
-            <a href="Sketchbox.html" class="btn">View Details</a>
-        </div>
-
-        <div class="project">
-            <h3>The Nagas (2022)</h3>
-            <img src="images/the-nagas-thumbnail.jpg" alt="The Nagas Project Image" width="100%"
-                style="border-radius: 8px; margin-bottom: 10px;">
-            <p>Mobile ARPG - Personal Project</p>
-            <a href="Nagas.html" class="btn">View Details</a>
-        </div>
-
     </div>
+</nav>
 
-    <footer>
-        <p><a href="Resume/Mehdi Ali - Intermediate Game Developer Resume.pdf" style="color:white;">📄 Resume</a>
-            <a href="Resume/Mehdi Ali - GG Letter of Recommendation.pdf" style="color:white;">Recommendation</a>
-        </p>
-        <div class="social-links">
-            <a href="https://www.linkedin.com/in/mehdiali-dev/" style="color:white;">LinkedIn</a>
-            <a href="https://github.com/Mehdi-Ali" style="color:white;">GitHub</a>
-            <a href="https://www.upwork.com/freelancers/~011dc34883b864e570" style="color:white;">Upwork</a>
-            <a href="https://www.artstation.com/mehdi-ali" style="color:white;">ArtStation</a>
+<!-- Main Content Area -->
+<main class="flex-grow container mx-auto p-6 lg:p-10">
+    <!-- Studio Banner Section: Features the studio banner image and main title -->
+    <section class="relative bg-gray-800 rounded-xl shadow-lg mb-10 overflow-hidden">
+        <!-- Studio banner image with responsiveness and styling -->
+        <img src="./assets/_studio-banner.png" alt="VanguarDz Studio Banner" class="w-full h-64 object-cover object-center rounded-t-xl opacity-80">
+        <!-- Overlay gradient for better text readability -->
+        <div class="absolute inset-0 bg-gradient-to-t from-gray-900 via-transparent to-transparent"></div>
+        <!-- Title and short tagline positioned at the bottom left of the banner -->
+        <div class="absolute bottom-0 left-0 p-6">
+            <h1 class="text-5xl md:text-6xl font-extrabold text-purple-400 drop-shadow-lg mb-2">VanguarDz</h1>
+            <p class="text-xl md:text-2xl text-gray-300 max-w-2xl">Crafting competitive fun for friends.</p>
         </div>
-        <p>alimehdi.offi@gmail.com</p>
-    </footer>
+    </section>
 
+    <!-- About Section: Details the studio's mission and passion -->
+    <section class="bg-gray-800 p-8 rounded-xl shadow-lg mb-8">
+        <h2 class="text-4xl md:text-5xl font-bold text-purple-300 mb-6">About Our Studio</h2>
+        <p class="text-lg leading-relaxed text-gray-300 mb-6">
+            VanguarDz is an independent game development studio dedicated to creating fun, competitive gaming experiences designed for friends to enjoy together. Our passion lies in crafting engaging titles that foster friendly rivalry and memorable moments. We believe in the power of shared experiences and strive to build games that bring people closer through exciting challenges and collaborative play.
+        </p>
+    </section>
+
+    <!-- Contact Section: Provides contact information for the studio -->
+    <section class="bg-gray-800 p-8 rounded-xl shadow-lg">
+        <h2 class="text-4xl md:text-5xl font-bold text-purple-300 mb-6">Connect With Us</h2>
+        <div class="flex items-center space-x-4 flex-wrap">
+            <!-- Email icon (SVG) -->
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-8 h-8 text-purple-400">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+            </svg>
+            <!-- Contact email address with a mailto link -->
+            <p class="text-xl text-gray-300">Email: <a href="mailto:vanguardzstudio@gmail.com" class="text-purple-400 hover:underline">vanguardzstudio@gmail.com</a></p>
+        </div>
+    </section>
+</main>
+
+<!-- Footer Section -->
+<footer class="bg-gray-800 p-6 rounded-t-lg shadow-inner mt-10">
+    <div class="container mx-auto text-center text-gray-400 text-sm">
+        &copy; 2025 VanguarDz. All rights reserved.
+    </div>
+</footer>
 </body>
-
 </html>
